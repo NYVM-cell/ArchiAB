@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - ArchiAB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="projects">
+        <h1>Nos Projets</h1>
+        <div class="project-gallery">
+            <div class="project-item">
+                <img src="projet1.jpg" alt="Projet 1">
+                <p>Projet 1 - Description</p>
+            </div>
+            <div class="project-item">
+                <img src="projet2.jpg" alt="Projet 2">
+                <p>Projet 2 - Description</p>
+            </div>
+            <div class="project-item">
+                <img src="projet3.jpg" alt="Projet 3">
+                <p>Projet 3 - Description</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArchiAB -

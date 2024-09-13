@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrimoine UNESCO - ArchiAB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="unesco">
+        <h1>Sites classés au patrimoine UNESCO</h1>
+        <p>Accédez à notre base de données des sites classés au patrimoine mondial après connexion.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArchiAB - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

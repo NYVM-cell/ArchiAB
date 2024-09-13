@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchiAB - Architecture à Rabat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="hero">
+        <h1>Bienvenue chez ArchiAB</h1>
+        <p>Cabinet d'architecture à Rabat, spécialiste de l'architecture almoravide et moderne classique</p>
+        <a href="about.html" class="btn">En savoir plus</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArchiAB - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

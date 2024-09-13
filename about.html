@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - ArchiAB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <section class="about">
+        <h1>À propos de nous</h1>
+        <p>
+            ArchiAB est un cabinet d'architecture basé à Rabat, Maroc, spécialisé dans l'architecture almoravide et moderne classique.
+            Nous avons réalisé de nombreux projets emblématiques dans la région, mêlant tradition et modernité.
+        </p>
+        <p>
+            Depuis [année], notre équipe d'architectes s'engage à fournir des solutions élégantes et respectueuses du patrimoine architectural marocain.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ArchiAB - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
